@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Poptionary",
+  "description": "Shows dictionary search results for the dragged word or phrase in a popup format.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/dropdown.js"],
+      "css": [
+        "styles.css",
+        "fonts/Pretendard/pretendard.css"
+      ]
+    }
+  ]
+}
